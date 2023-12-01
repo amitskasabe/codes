@@ -1,0 +1,136 @@
+length() Function:
+
+Syntax: size_t length() const;
+Example:
+cpp
+Copy code
+std::string str = "Hello, World!";
+size_t len = str.length();
+std::cout << "Length: " << len << std::endl;
+size() Function:
+
+Syntax: size_t size() const;
+Example:
+cpp
+Copy code
+std::string str = "C++ Programming";
+size_t sz = str.size();
+std::cout << "Size: " << sz << std::endl;
+substr() Function:
+
+Syntax: std::string substr(size_t pos, size_t len) const;
+Example:
+cpp
+Copy code
+std::string sentence = "C++ is powerful";
+std::string sub = sentence.substr(0, 3);  // Extract "C++"
+find() Function:
+
+Syntax: size_t find(const std::string& str, size_t pos = 0) const;
+Example:
+cpp
+Copy code
+std::string message = "Search for a substring";
+size_t position = message.find("for");
+replace() Function:
+
+Syntax: std::string& replace(size_t pos, size_t len, const std::string& str);
+Example:
+cpp
+Copy code
+std::string sentence = "C++ is fun.";
+sentence.replace(0, 3, "Java");
+append() Function:
+
+Syntax: std::string& append(const std::string& str);
+Example:
+cpp
+Copy code
+std::string greeting = "Hello, ";
+greeting.append("World!");
+compare() Function:
+
+Syntax: int compare(const std::string& str) const;
+Example:
+cpp
+Copy code
+std::string str1 = "apple";
+std::string str2 = "banana";
+int result = str1.compare(str2);
+c_str() Function:
+
+Syntax: const char* c_str() const noexcept;
+Example:
+cpp
+Copy code
+std::string myString = "C++";
+const char* cString = myString.c_str();
+stoi() Function (String to Integer):
+
+Syntax: int stoi(const std::string& str, size_t* pos = 0, int base = 10);
+Example:
+cpp
+Copy code
+std::string numStr = "42";
+int num = std::stoi(numStr);
+to_string() Function (Integer to String):
+
+Syntax: std::string to_string(int val);
+Example:
+cpp
+Copy code
+int number = 123;
+std::string numStr = std::to_string(number);
+
+string questions 
+
+Concatenate two strings and display the result.
+Find the length of a given string.
+Extract a substring from a string.
+Check if two strings are equal.
+Reverse a string.
+Count the number of vowels in a string.
+Convert a string to uppercase.
+Convert a string to lowercase.
+Remove spaces from a string.
+Replace a specific substring in a string.
+Check if a string is a palindrome.
+Count the occurrences of a specific character in a string.
+Remove duplicate characters from a string.
+Compare two strings ignoring case.
+Find the first occurrence of a substring in a string.
+Swap the first and last characters of a string.
+Convert a string to an integer.
+Convert an integer to a string.
+Display each word in a sentence on a new line.
+Count the number of words in a sentence.
+Remove trailing whitespace from a string.
+Insert a substring at a specific position in a string.
+Check if a string contains only digits.
+Check if a string contains only alphabetic characters.
+Find the second occurrence of a character in a string.
+Remove the last character from a string.
+Extract numbers from a string and sum them.
+Capitalize the first letter of each word in a sentence.
+Check if a string ends with a specific suffix.
+Remove a specific character from a string.
+Count the number of consonants in a string.
+Replace spaces with underscores in a string.
+Remove punctuation from a given string.
+Insert a character at every space in a string.
+Extract the middle character(s) from a string.
+Rotate the characters in a string to the left by a given number.
+Convert a binary string to an integer.
+Find the longest word in a sentence.
+Check if a string is a valid email address.
+Check if a string contains only printable characters.
+Extract the file extension from a filename.
+Remove all digits from a string.
+Replace multiple spaces with a single space in a string.
+Remove characters from the beginning of a string until a specific character is found.
+Check if two strings are anagrams.
+Display the characters in a string in reverse order, but keep the words in the correct order.
+Find the first non-repeating character in a string.
+Replace each letter in a string with its position in the alphabet.
+Shuffle the characters in a string.
+Implement a function to perform string encryption and decryption.

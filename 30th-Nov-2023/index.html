@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="amos"> 40 </h3>
+    <button id="fire"> Fire</button>
+    <script>
+        let f = document.getElementById("fire");
+        let amos = document.getElementById("amos").innerHTML;
+        amos = parseInt(f);
+        console.log(typeof(amos));
+        f.addEventListener("click",function(e)
+        {
+
+            console.log(amos);
+        });
+    </script>
+</body>
+</html>
