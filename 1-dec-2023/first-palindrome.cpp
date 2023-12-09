@@ -6,42 +6,55 @@ string s[] = {"abc" , "abab" , "bab" , "abcba" , "bab"}
 s2 = {"aba" , "abcda" , "aca"}
 s3 = {"ad" , "abd" , "abcd"}
 */
-int firstPlindrom(string str[], int size)
+bool isThisPalindrome(string str)
 {
-    // {"abc", "abab", "bab", "abcba", "bab"}
+    // abc
 
-    for (int i = 0; i < size; i++)
+    bool isPalindrom = true;
+    int start = 0;
+    int end = str.length() - 1;
+    
+    while (start < end)
     {
-        bool isPalindrom = true;
-        int start = 0;
-        int end = str[i].length() - 1;
-        while (start < end)
+       
+        if (str[start] != str[end])
         {
-            if (str[i][start] != str[i][end])
-            {
-                isPalindrom = false;
-                break;
-            }
-            start++;
-            end--;
+            isPalindrom = false;
+            break;
         }
-        if (isPalindrom)
-        {
-            return i;
-        }
+        start++;
+        end--;
     }
-    return -1;
+    
+    if (isPalindrom)
+    {
+        return isPalindrom;
+    }
 }
+// int firstPlindrom(string str[], int size)
+// {
+//     // {"abc", "abab", "bab", "abcba", "bab"}
+
+//     for (int i = 0; i < size; i++)
+//     {
+//         if (isThisPalindrome(str[i]) == true)
+//         {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
 int main()
 {
     string s[] = {"abc", "ababs", "nayan", "abcba", "bab"};
     string s2[] = {"nayanw", "nitinw", "aba"};
-    int size = sizeof(s2) / sizeof(s2[0]);
+    int size = sizeof(s) / sizeof(s[0]);
     // int n;
     // int arr[n];
     // for(int i=0; i<n; i++)
     // {
     //     cin>>arr[i];
     // }
-    cout << firstPlindrom(s2, size);
+    cout<<isThisPalindrome("abc");
+    // cout << firstPlindrom(s2, size);
 }
