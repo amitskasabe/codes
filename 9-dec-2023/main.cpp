@@ -2,31 +2,14 @@
 using namespace std;
 int main()
 {
-    int A[2][3] = {{10, 20, 30}, {4, 5, 6}};
-    /*
-    1 2 3 = 6
-    4 5 6
-    */
+    int A[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     int count = 0;
     int c = 0;
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i > 0)
-            {
-                break;
-            }
-            count += A[i][j];
-        }
-    }
-    cout << endl;
-
-    for (int i = 0; i < 2; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            if (j == 0)
+            if (i == j)
             {
                 // continue;
                 c += A[i][j];
@@ -37,3 +20,11 @@ int main()
     // cout << count << endl;
     cout << c;
 }
+/*
+
+1 2 3 = 1 : 6
+4 5 6 = 2 : 15
+7 8 9 = 3:24
+12 15 18
+
+*/
